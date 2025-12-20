@@ -32,6 +32,20 @@ Below is an symbolic analysis of a car radiator using this model
 
 ---
 
+---
+### Depiction of a Cross Flow Heat Exchanger
+<p style="text-align:center;">
+</p>
+<p style="text-align:center;">
+  <img src="{{ '/assets/images/crossflow.png' | relative_url }}"
+       alt="realistic radiator"
+       style="width: 300px; height: auto;">
+</p>
+The cross flow heat exchanger is an accurate model for the car radiator
+
+---
+
+
 ### Mass balances 
 The 'c' subscript denotes coolant, while the 'a' subscript denotes air
 
@@ -66,53 +80,113 @@ $$
 $$
 
 $$
-\dot Q_{CV}+\dot m_c h_{c,in}+\dot m_a h_{a,in}
+\dot m_{in}gz_{in}-\dot m_{out}gz_{out}\approx 0
+$$
+
+$$
+\dot W_{CV}\approx 0 
+$$
+
+$$
+\dot Q_{CV}\approx 0
+$$
+
+$$
+\dot m_c h_{c,in}+\dot m_a h_{a,in}
 -\dot m_c h_{c,out}-\dot m_a h_{a,out}=0
 $$
 
 
 $$
-\dot m_c\left(h_{c,in}-h_{c,out}\right)\approx
+\dot m_c\left(h_{c,in}-h_{c,out}\right) =
 \dot m_a\left(h_{a,out}-h_{a,in}\right)
 $$
 
-Assuming constant specific heats:
+This can be further simplified under the assumption of constant specific heats, which is reasonable considering that car radiators do not typically span a huge range of temperatures:
+
+
 $$
 \dot m_c c_{p,c}\left(T_{c,in}-T_{c,out}\right)\approx
 \dot m_a c_{p,a}\left(T_{a,out}-T_{a,in}\right)
 $$
 
-Define the radiator heat rejection rate (coolant side):
+The radiator heat rejection rate 
 $$
-\dot Q_{rej}\equiv \dot m_c c_{p,c}\left(T_{c,in}-T_{c,out}\right)
+\dot Q_{rej}
 $$
+represents the rate at which heat is transferred out of the hot coolant and into the air stream.
+
+$$
+\dot Q_{rej} = \dot m_c c_{p,c}\left(T_{c,in}-T_{c,out}\right)
+$$
+
+Interpretation: The rate at which a radiator rejects heat from its coolant is dependent on its mass flow rate and the magnitude of the difference between its exit and inlet temperatures.
 
 ---
 
 ### Entropy balance
-General steady-flow entropy balance:
+General steady-state entropy balance:
+
 $$
-0=\sum_{in}\dot m s_{in}-\sum_{out}\dot m s_{out}+\sum_k\frac{\dot Q_k}{T_k}+\dot S_{gen}
+\sum_{in}\dot m s_{in}-\sum_{out}\dot m s_{out}+\sum_k\frac{\dot Q}{T_b}+\dot S_{gen} = 0
 $$
 
-For a two-stream radiator:
+For a cross-flow heat exchanger:
+
 $$
 \dot S_{gen}=
 \dot m_c\left(s_{c,out}-s_{c,in}\right)+
 \dot m_a\left(s_{a,out}-s_{a,in}\right)
--\sum_k\frac{\dot Q_k}{T_k}
+-\sum_k\frac{\dot Q}{T_b}
 $$
 
-If the radiator is externally adiabatic:
+Since the radiator model is externally adiabatic:
+
 $$
 \dot S_{gen}=
 \dot m_c\left(s_{c,out}-s_{c,in}\right)+
 \dot m_a\left(s_{a,out}-s_{a,in}\right)\ge 0
 $$
 
-**Interpretation:** Heat transfer occurs across a finite temperature difference (and there are pressure drops), so the process is irreversible and generates entropy.
+Interpretation: For any real radiator, the value of entropy generated will be significantly greater than 0, since heat transfer occurs across a finite temperature difference. For the ideal and internally reversible radiator, the entropy generated is equal to 0. The entropy generation for the radiator will never be negative because this is impossible.
 
 ---
+### Radiator Performance Under Different Operating Conditions
 
+1.
+Consider a very slow moving vehicle:
 
+In this case, 
+$$
+\dot m_{a,in}
+$$
+is very small, since a lot of the mass flow of air is from air coming under the hood while driving. This decreases the value of 
+$$
+\dot Q_{rej}
+$$
+, as they are directly porportional. Since the radiator is able to reject less heat from the coolant at low speeds, this explains why overheating is common at idle rather than on the highway. This is also why most radiators typically have a fan that ensures a high enough mass flow rate of air even when the vehicle isn't moving.
+
+2.
+Consider a very hot day:
+
+In this case,
+$$
+\dot T_{a,in}
+$$
+is likely similar in value to 
+$$
+\dot T_{c,in}
+$$
+, meaning that the temperature driving force of the radiator is greatly decreased. This reduces the possible decrease in temperature of the coolant that the radiator is attempting to achieve, and in turn sends coolant that is still too hot back to the engine, eventually risking overheating.
+
+3.
+Consider a radiator that has clogged fins:
+
+In this case, the effective area of the radiator that is available for heat transfer decreases. While this may not relate directly to previous entropy and enegery balances, there is another equation that governs real heat exchangers:
+
+$$
+\dot Q \approx UA \Delta T_{lm}
+$$
+
+Where U is the overall heat transfer coefficient, A is effective heat transfer area, and T is the log mean temperature difference. In idealized calculations area was ignored, but in reality a radiator with more heat transfer area is able to remove more heat from the coolant. Therefore, a radiator that is dirty or has debris in its fins has reduced heat transfer area, and is thus less effective.
 
