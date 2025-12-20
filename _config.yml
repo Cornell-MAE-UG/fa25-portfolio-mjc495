@@ -14,8 +14,8 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : Madison Cheek
 description              : Madison Cheek - Projects and CV 
 baseurl                  : "/fa25-portfolio-mjc495" # Set this to your repo name 
-url: "https://YOUR_GITHUB_USERNAME.github.io"
-repository: "YOUR_GITHUB_USERNAME/fa25-portfolio-mjc495"
+url: "https://mjc495.github.io"
+repository: "mjc495/fa25-portfolio-mjc495"
 
 
 # Theme and Style
