@@ -2,6 +2,7 @@
 layout: project
 title: MAE 2250 - Client Outline & Pitch
 description: Proposal
+image: /assets/images/SLF.png
 ---
 
 ---
@@ -10,7 +11,7 @@ description: Proposal
 </p>
 <p style="text-align:center;">
   <img src="{{ 'assets\images\proposal.png' | relative_url }}"
-       alt="realistic radiator"
+       alt="proposal"
        style="width: 300px; height: auto;">
 </p>
 ---
