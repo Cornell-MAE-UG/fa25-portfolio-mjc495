@@ -10,8 +10,8 @@ image: /assets/images/SLF.png
 <p style="text-align:center;">
 </p>
 <p style="text-align:center;">
-  <img src="{{ 'assets\images\proposal.png' | relative_url }}"
+  <img src="{{ 'assets/images/proposal.png' | relative_url }}"
        alt="proposal"
-       style="width: 300px; height: auto;">
+       style="width: auto; height: auto;">
 </p>
 ---
