@@ -3,6 +3,7 @@ layout: project
 title: MAE 2250 - Client Outline & Pitch
 description: Proposal
 image: /assets/images/SLF.png
+toc = True
 ---
 
 ---
