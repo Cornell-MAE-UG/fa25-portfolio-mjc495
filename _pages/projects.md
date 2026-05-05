@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="gallery-container">
-<div class="project-gallery">
+  <div class="project-gallery">
     {% for project in site.projects %}
       {% if project.toc != true %}
         <div class="gallery-item">
@@ -14,6 +14,7 @@ permalink: /projects/
             <p>{{ project.title}}</p>
           </a>
         </div>
-      {% endfor %}
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
