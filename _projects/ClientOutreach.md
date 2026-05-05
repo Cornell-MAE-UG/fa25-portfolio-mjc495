@@ -1,7 +1,6 @@
 ---
 layout: project
 title: Client Outreach for Open Design Project
-image: /assets/images/SLF.png
 toc: True
 ---
 
