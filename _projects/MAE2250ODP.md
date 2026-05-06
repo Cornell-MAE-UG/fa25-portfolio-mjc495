@@ -16,7 +16,7 @@ We are solving the issue of spotted lanternflies' presense in grape collection b
 
 
 ## Milestone 1.
-[Client Outreach] ({{ "/projects/ZClientOutreach" | relative_url }})
+[Client Outreach]({{ "/projects/ZClientOutreach/" | relative_url }})
 ## Milestone 2.
 
 ## Milestone 3.
