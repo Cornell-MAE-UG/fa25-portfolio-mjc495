@@ -5,12 +5,11 @@ toc: True
 ---
 
 ---
-### First Functional Prototype
 
-<p style="text-align:Right;">
+<p style="text-align:Center;">
 </p>
-<p style="text-align:Right;">
-  <img src="{{ '/assets/images/PrototypeSketch.png' | relative_url }}"
+<p style="text-align:Center;">
+  <img src="{{ '/assets/images/FirstPrototype.png' | relative_url }}"
        alt="Prototype Sketch"
        style="width: 300px; height: auto;">
 </p>
@@ -32,3 +31,19 @@ c. Attach clamps to the horizontal base
 6. Attach the collection bag to the outlet of the cyclone with glue/tape
 
 7. Clamp base to the side of the conveyor belt
+
+<p style="text-align:Center;">
+</p>
+<p style="text-align:Center;">
+  <img src="{{ '/assets/images/PrototypeSketch.png' | relative_url }}"
+       alt="Prototype Sketch"
+       style="width: 300px; height: auto;">
+</p>
+<p style="text-align:Center;">
+</p>
+<p style="text-align:Center;">
+  <img src="{{ '/assets/images/Aperture.png' | relative_url }}"
+       alt="Prototype Sketch"
+       style="width: 300px; height: auto;">
+</p>
+The Aperture (shown above) consists of eleven leaves that are laid out and clamped to the base using pins and screws, each leaf having one degree of motion.
