@@ -49,8 +49,23 @@ c. Attach clamps to the horizontal base
 The Aperture (shown above) consists of eleven leaves that are laid out and clamped to the base using pins and screws, each leaf having one degree of motion.
 
 ---
+### Component List
+<p style="text-align:Center;">
+  <img src="{{ '/assets/images/Components1.png' | relative_url }}"
+       alt="Prototype Sketch"
+       style="width: 500px; height: auto;">
+</p>
+<p style="text-align:Center;">
+  <img src="{{ '/assets/images/Components2.png' | relative_url }}"
+       alt="Prototype Sketch"
+       style="width: 500px; height: auto;">
+</p>
+---
 
 ## Design Tests
+
+
+
 
 ### Test 1: What is the maximum distance and aperture diameter above the conveyor belt such that it can suck up 2-3 grams?
 Method of testing: Using a 3g target object weighed on a scale, lower the vacuum closer to the target slowly until the target gets sucked up. The height at which the vacuum picks up the target is recorded using a ruler, and this is the height relative to the table. The height relative to the target is also recorded by subtracting the target height from the height above table. This allows us to see how far the vacuum must be from the top of the object that we want to pick up. We will test this with a few different aperture diameters to see how adjusting the aperture impacts the vacuum’s lifting power. This is testing for the max height at which we can place the aperture above the conveyor belt. It is also testing to see if the vacuum can suck up SLFs when the aperture is set to different diameters. 
