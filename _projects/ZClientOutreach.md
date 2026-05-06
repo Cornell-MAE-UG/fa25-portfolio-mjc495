@@ -50,15 +50,15 @@ By the end of the semester, we can design and 3D print a nozzle to adapt to a co
 
 **Questions for the Client**
 
-1. How likely are dislodged SLFs from the harvester to cling on to grapes?  
+- How likely are dislodged SLFs from the harvester to cling on to grapes?  
 
 Decision affected: If this is the case, we need to implement a solution that dislodges the SLFs from the grapes before vacuuming.
 
-2. How easy is it to implement a bulky solution like a vacuum on the conveyor belt that connects the harvester and the collection bin?  
+- How easy is it to implement a bulky solution like a vacuum on the conveyor belt that connects the harvester and the collection bin?  
 
 Decision affected: If it is not easy to implement a solution on the current infrastructure, we would have to modify the conveyor belt system as well.
 
-3. How much material other than grapes remains after the fan stage?
+- How much material other than grapes remains after the fan stage?
 
 Decision affected: If there are a lot of materials other than grape (MOG), we will have to alter the suction power to remove them because SLFs may cling onto debris.
 
