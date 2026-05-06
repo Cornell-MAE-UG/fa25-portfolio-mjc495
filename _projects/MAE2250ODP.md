@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MAE 2250 - Open Design Project
+title: MAE 2250 Open Design Project
 description: Proposal
 image: /assets/images/SLF.png
 ---
@@ -16,7 +16,7 @@ We are solving the issue of spotted lanternflies' presense in grape collection b
 
 
 ## Milestone 1.
-
+[Client Outreach] ({{ "/projects/ZClientOutreach"}})
 ## Milestone 2.
 
 ## Milestone 3.
