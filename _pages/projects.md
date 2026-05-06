@@ -7,12 +7,10 @@ permalink: /projects/
 <div class="gallery-container">
   <div class="project-gallery">
     {% for project in site.projects %}
-      {% if project.toc != true %}
+      {% if project.toc != true and project.image %}
         <div class="gallery-item">
           <a href="{{ project.url | relative_url }}">
-            {% if project.image %}
-              <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
-            {% endif %}
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
             <p>{{ project.title}}</p>
           </a>
         </div>
