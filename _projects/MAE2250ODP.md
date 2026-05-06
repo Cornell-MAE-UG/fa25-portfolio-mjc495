@@ -6,7 +6,7 @@ image: /assets/images/SLF.png
 ---
 
 ---
-### Solving the Overpopulation of Spotted Lanturnflies Issue at NY Vineyards
+### Solving the Overpopulation of Spotted Lanternflies Issue at NY Vineyards
 
 
 
@@ -21,4 +21,5 @@ We are solving the issue of spotted lanternflies' presense in grape collection b
 [First Functional Prototype]({{"/projects/ZFunctionalPrototype/" | relative_url}})
 ## Milestone 3.
 [Client Report]({{ "/projects/ZClientReport/" | relative_url}})
+
 ---
