@@ -14,7 +14,6 @@ image: /assets/images/Screenshot 2025-12-19 180227.png
        style="width: 300px; height: auto;">
 </p>
 
-placeholder
-fluid mechanical dissection
+We are building a strandbeast, a wind-powered walker
 ---
 
